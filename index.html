@@ -31,6 +31,72 @@
             --hover-transform: translateY(-5px);
         }
 
+
+
+
+        
+        
+
+/* 1. Make Oracle Red */
+.oracle-red { color: #ff0000; font-weight: bold; }
+
+/* 2. Style for the small Navigation Button */
+.oracle-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid #4fd1c5;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* 3. Style for the 3 Big Cards */
+.cert-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.cert-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.cert-card:hover {
+    border-color: #4fd1c5;
+    transform: translateY(-10px);
+}
+
+.view-btn-highlight {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4fd1c5;
+    color: #0b1120;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+        
+        
         /* Light Theme */
         [data-theme="light"] {
             --primary-bg: #f8fafc;
@@ -1297,6 +1363,18 @@
                                 <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
                             </svg>
                             <span>View Projects</span>
+
+
+                            
+<a href="#my-certs" class="oracle-nav-btn">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="#4fd1c5"><path d="M8 0L0 4l8 4 8-4-8-4zM0 12l8 4 8-4V7L8 11 0 7v5z"/></svg>
+    <span><span class="oracle-red">Oracle</span> Certifications</span>
+</a>
+
+
+
+
+                            
                         </a>
                       <a class="contact-btn full-width" href="aryres.pdf" download="Aryan_Kumar_Sahu_Resume.pdf" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -1927,6 +2005,38 @@
                 </div>
             </div>
         </section>
+
+
+      <!-- ORACLE -->
+<section id="my-certs">
+    <h2 style="text-align:center;">My <span class="oracle-red">Oracle</span> Professional Journey</h2>
+    
+    <div class="cert-grid">
+        <a href="https://aryan8521.github.io/-NetSuite-Certified-BI-and-Reporting-Specialist/" class="cert-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            <h3>NetSuite BI</h3>
+            <p>Financial systems and data visualization expert.</p>
+            <div class="view-btn-highlight">View Credential</div>
+        </a>
+
+        <a href="YOUR_LINK" class="cert-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            <h3>AI Autonomous DB</h3>
+            <p>Expertise in AI-driven cloud databases.</p>
+            <div class="view-btn-highlight">View Credential</div>
+        </a>
+
+        <a href="YOUR_LINK" class="cert-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><path d="M12 2v10l4.5 4.5"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            <h3>Analytics Cloud</h3>
+            <p>Professional cloud data implementation.</p>
+            <div class="view-btn-highlight">View Credential</div>
+        </a>
+    </div>
+</section>
+
+
+    
 
         <!-- Internships -->
         <section id="internships" class="loading">
