@@ -35,62 +35,91 @@
 
 
         
-        
-
-/* 1. Make Oracle Red */
-.oracle-red { color: #ff0000; font-weight: bold; }
-
-/* 2. Style for the small Navigation Button */
-.oracle-nav-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border: 1px solid #4fd1c5;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    transition: 0.3s;
+        /* Professional Styling Update */
+#my-certs {
+    padding: 80px 20px;
+    background: radial-gradient(circle at center, #0f172a 0%, #0b1120 100%);
 }
 
-/* 3. Style for the 3 Big Cards */
+.oracle-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 .cert-grid {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
 }
 
 .cert-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 15px;
-    width: 300px;
+    background: rgba(255, 255, 255, 0.03); /* Glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(79, 209, 197, 0.2);
+    padding: 40px 30px;
+    border-radius: 24px;
+    width: 320px;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     color: white;
+    position: relative;
+    overflow: hidden;
 }
 
+/* The Glow Effect on Hover */
 .cert-card:hover {
     border-color: #4fd1c5;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(79, 209, 197, 0.15);
+    background: rgba(255, 255, 255, 0.07);
 }
 
+.cert-icon-container {
+    background: rgba(79, 209, 197, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.cert-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #4fd1c5;
+}
+
+.cert-card p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* The Button inside the card */
 .view-btn-highlight {
-    margin-top: 15px;
     display: inline-block;
-    padding: 10px 20px;
-    background: #4fd1c5;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
     color: #0b1120;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
 }
 
-
+.cert-card:hover .view-btn-highlight {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(79, 209, 197, 0.4);
+}
 
 
 
