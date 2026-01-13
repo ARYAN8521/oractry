@@ -30,101 +30,7 @@
             --glass-bg: rgba(14, 23, 47, 0.8);
             --hover-transform: translateY(-5px);
         }
-
-
-
-
-        
-        /* Professional Styling Update */
-#my-certs {
-    padding: 80px 20px;
-    background: radial-gradient(circle at center, #0f172a 0%, #0b1120 100%);
-}
-
-.oracle-title {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.cert-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cert-card {
-    background: rgba(255, 255, 255, 0.03); /* Glass effect */
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(79, 209, 197, 0.2);
-    padding: 40px 30px;
-    border-radius: 24px;
-    width: 320px;
-    text-align: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-decoration: none;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-/* The Glow Effect on Hover */
-.cert-card:hover {
-    border-color: #4fd1c5;
-    transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(79, 209, 197, 0.15);
-    background: rgba(255, 255, 255, 0.07);
-}
-
-.cert-icon-container {
-    background: rgba(79, 209, 197, 0.1);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-}
-
-.cert-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-    color: #4fd1c5;
-}
-
-.cert-card p {
-    font-size: 0.95rem;
-    color: #94a3b8;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-/* The Button inside the card */
-.view-btn-highlight {
-    display: inline-block;
-    padding: 12px 28px;
-    background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
-    color: #0b1120;
-    border-radius: 12px;
-    font-weight: 800;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.cert-card:hover .view-btn-highlight {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(79, 209, 197, 0.4);
-}
-
-
-
-
-        
+    
         
         /* Light Theme */
         [data-theme="light"] {
@@ -1442,11 +1348,12 @@
             <a class="btn" href="#certificates">Certificates</a>
             <a class="btn" href="#internships">Internships</a>
             <a class="btn" href="#contact">Contact</a>                   
-<a href="#my-certs" class="oracle-nav-btn">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="#4fd1c5"><path d="M8 0L0 4l8 4 8-4-8-4zM0 12l8 4 8-4V7L8 11 0 7v5z"/></svg>
-    <span><span class="oracle-red">Oracle</span> Certifications</span>
+<a class="contact-btn oracle-nav" href="#my-certs" style="display: inline-flex; align-items: center; gap: 8px; border: 2px solid #00d2ff; padding: 5px 15px; border-radius: 50px; text-decoration: none; color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+    </svg>
+    <span><strong style="color: #ff0000;">Oracle Certifications</strong> Certifications</span>
 </a>
-
         </nav>
 
 
@@ -2034,40 +1941,114 @@
 
 
     
+<style>
+    /* The outer container matching your blue-framed portfolio style */
+    .oracle-container-box {
+        background-color: #050a18;
+        border: 2px solid #00d2ff; /* Your Cyan Glow Color */
+        border-radius: 15px;
+        padding: 60px 20px;
+        margin: 40px auto;
+        max-width: 1100px;
+        text-align: center;
+    }
 
-<section id="my-certs">
-    <h2 class="oracle-title">My <span style="color: #ff0000; font-weight: 900;">ORACLE</span> Professional Journey</h2>
-    
-    <div class="cert-grid">
-        <a href="YOUR_LINK" class="cert-card">
-            <div class="cert-icon-container">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-            </div>
+    /* Heading with Red Oracle */
+    .section-title {
+        font-size: 2.5rem;
+        color: #4fd1c5; /* Cyan for 'Professional Journey' */
+        margin-bottom: 10px;
+    }
+
+    .red-text { color: #ff0000; font-weight: 900; }
+
+    .underline-cyan {
+        width: 60px;
+        height: 4px;
+        background: #4fd1c5;
+        margin: 0 auto 50px;
+    }
+
+    .flex-cert-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Cards matching your Screenshot (9) */
+    .cert-pill-card {
+        background: #0b1426;
+        border: 1px solid rgba(0, 210, 255, 0.2);
+        border-radius: 20px;
+        padding: 40px 25px;
+        width: 300px;
+        transition: 0.3s ease;
+        text-decoration: none;
+        color: white;
+    }
+
+    .cert-pill-card:hover {
+        border-color: #00d2ff;
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+    }
+
+    .cert-pill-card h3 {
+        color: #f3f4f6;
+        margin: 15px 0;
+    }
+
+    .cert-pill-card p {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    /* View Credential Button - Matching your Contact style */
+    .view-cred-btn {
+        display: inline-block;
+        background: #4fd1c5;
+        color: #050a18;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .view-cred-btn:hover {
+        background: #ffffff;
+        box-shadow: 0 0 15px #4fd1c5;
+    }
+</style>
+
+<section class="oracle-container-box" id="my-certs">
+    <h2 class="section-title">My <span class="red-text">Oracle</span> Professional Journey</h2>
+    <div class="underline-cyan"></div>
+
+    <div class="flex-cert-grid">
+        <a href="YOUR_LINK" class="cert-pill-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
             <h3>NetSuite BI</h3>
-            <p>Mastering financial data visualization and advanced KPI tracking architecture.</p>
-            <div class="view-btn-highlight">View Credential</div>
+            <p>Expertise in financial systems and data visualization configuration.</p>
+            <div class="view-cred-btn">View Credential</div>
         </a>
 
-        <a href="YOUR_LINK" class="cert-card">
-            <div class="cert-icon-container">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            </div>
+        <a href="YOUR_LINK" class="cert-pill-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
             <h3>AI Autonomous DB</h3>
-            <p>Implementing self-driving database solutions with AI-powered optimization.</p>
-            <div class="view-btn-highlight">View Credential</div>
+            <p>Implementing AI-driven secure database management solutions.</p>
+            <div class="view-cred-btn">View Credential</div>
         </a>
 
-        <a href="YOUR_LINK" class="cert-card">
-            <div class="cert-icon-container">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a3.5 3.5 0 1 1-5.83-2.65 10.1 10.1 0 0 1 1.83-2.65 10.1 10.1 0 0 1 1.83 2.65A3.5 3.5 0 0 1 17.5 19z"></path><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-            </div>
+        <a href="YOUR_LINK" class="cert-pill-card">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             <h3>Analytics Cloud</h3>
-            <p>Strategic cloud data analytics and enterprise-level business intelligence.</p>
-            <div class="view-btn-highlight">View Credential</div>
+            <p>Advanced cloud analytics administration and visualization.</p>
+            <div class="view-cred-btn">View Credential</div>
         </a>
     </div>
 </section>
-    
 
         <!-- Internships -->
         <section id="internships" class="loading">
