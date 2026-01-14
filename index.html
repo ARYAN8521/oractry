@@ -1972,36 +1972,137 @@
             </div>
         </section>
 
+
+
+
+
+
     
+<style>
+    /* Main Glowing Container */
+    .oracle-journey-container {
+        background-color: #050a18;
+        border: 2px solid #00d2ff;
+        border-radius: 20px;
+        padding: 60px 20px;
+        margin: 50px auto;
+        max-width: 1100px;
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2), inset 0 0 15px rgba(0, 210, 255, 0.1);
+        text-align: center;
+    }
 
+    /* Heading Styling */
+    .oracle-title-red {
+        font-size: 2.8rem;
+        color: #4fd1c5; /* Cyan for 'Professional Journey' */
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
 
-<section class="oracle-main-box" id="my-certs">
-    <h2 style="color: #4fd1c5; font-size: 2.5rem;">My <span class="brand-red">Oracle</span> Professional Journey</h2>
-    <div style="width: 60px; height: 4px; background: #4fd1c5; margin: 10px auto 40px;"></div>
+    /* The critical Red Oracle Brand */
+    .brand-red {
+        color: #ff0000 !important;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    }
 
-    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <div style="background: #0b1426; border: 1px solid rgba(0,210,255,0.2); border-radius: 15px; padding: 30px; width: 300px; color: white;">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+    .journey-underline {
+        width: 80px;
+        height: 4px;
+        background: #4fd1c5;
+        margin: 0 auto 50px;
+        border-radius: 2px;
+        box-shadow: 0 0 10px #4fd1c5;
+    }
+
+    .cert-flex-wrapper {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Modern Neon Card Design */
+    .neon-cert-card {
+        background: #0b1426;
+        border: 1px solid rgba(0, 210, 255, 0.3);
+        border-radius: 18px;
+        padding: 45px 25px;
+        width: 310px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        text-decoration: none;
+    }
+
+    .neon-cert-card:hover {
+        border-color: #00d2ff;
+        transform: translateY(-12px);
+        box-shadow: 0 15px 30px rgba(0, 210, 255, 0.2);
+        background: #0f1a30;
+    }
+
+    .neon-cert-card h3 {
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin: 20px 0 12px;
+    }
+
+    .neon-cert-card p {
+        color: #94a3b8;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    /* High-Contrast Button */
+    .neon-view-btn {
+        display: inline-block;
+        background: #4fd1c5;
+        color: #050a18;
+        padding: 12px 32px;
+        border-radius: 10px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+    }
+
+    .neon-view-btn:hover {
+        background: #ffffff;
+        box-shadow: 0 0 20px #4fd1c5;
+        transform: scale(1.05);
+    }
+</style>
+
+<section class="oracle-journey-container" id="my-certs">
+    <h2 class="oracle-title-red">My <span class="brand-red">Oracle</span> Professional Journey</h2>
+    <div class="journey-underline"></div>
+
+    <div class="cert-flex-wrapper">
+        <a href="YOUR_LINK" class="neon-cert-card">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
             <h3>NetSuite BI</h3>
-            <p style="color: #94a3b8;">Expertise in financial systems and data visualization.</p>
-            <a href="YOUR_LINK" style="background:#4fd1c5; color:#050a18; padding:10px 20px; border-radius:8px; display:inline-block; font-weight:bold; text-decoration:none;">View Credential</a>
-        </div>
+            <p>Mastery of financial systems and advanced data visualization configurations.</p>
+            <div class="neon-view-btn">View Credential</div>
+        </a>
 
-        <div style="background: #0b1426; border: 1.5px solid #00d2ff; border-radius: 15px; padding: 30px; width: 300px; color: white; box-shadow: 0 0 15px rgba(0,210,255,0.1);">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect></svg>
+        <a href="YOUR_LINK" class="neon-cert-card" style="border-width: 2px; border-color: #00d2ff;">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
             <h3>AI Autonomous DB</h3>
-            <p style="color: #94a3b8;">Implementing secure database management solutions.</p>
-            <a href="YOUR_LINK" style="background:#4fd1c5; color:#050a18; padding:10px 20px; border-radius:8px; display:inline-block; font-weight:bold; text-decoration:none;">View Credential</a>
-        </div>
+            <p>Specialized in AI-driven secure database management and performance tuning.</p>
+            <div class="neon-view-btn">View Credential</div>
+        </a>
 
-        <div style="background: #0b1426; border: 1px solid rgba(0,210,255,0.2); border-radius: 15px; padding: 30px; width: 300px; color: white;">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <a href="YOUR_LINK" class="neon-cert-card">
+            <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#4fd1c5" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             <h3>Analytics Cloud</h3>
-            <p style="color: #94a3b8;">Advanced cloud analytics and visualization expert.</p>
-            <a href="YOUR_LINK" style="background:#4fd1c5; color:#050a18; padding:10px 20px; border-radius:8px; display:inline-block; font-weight:bold; text-decoration:none;">View Credential</a>
-        </div>
+            <p>Advanced cloud analytics administration and enterprise visualization strategies.</p>
+            <div class="neon-view-btn">View Credential</div>
+        </a>
     </div>
 </section>
+
+
+
+
+
 
     
         <!-- Internships -->
